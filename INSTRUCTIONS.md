@@ -51,6 +51,14 @@ CLERK_SECRET_KEY=
 
 `npx shadcn-ui@latest add sheet`
 
+### Sidebar
+
+...
+
+### Learn page wrappers
+
+...
+
 ### Deployment
 
 foreach
