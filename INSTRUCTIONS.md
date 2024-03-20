@@ -59,6 +59,23 @@ CLERK_SECRET_KEY=
 
 ...
 
+### Drizzle & Neon (elephantSQL)
+
+dn: https://orm.drizzle.team/docs/get-started-postgresql
+
+```
+neon.tech: login - create instance - copy env to .env
+npm i @neondatabase/serverless@0.9.0 drizzle-orm@0.30.1 dotenv@16.4.5
+npm i -D drizzle-kit@0.20.14
+npm run db:push
+validate table at neon dashboard
+```
+
+.env
+```
+DATABASE_URL=
+```
+
 ### Deployment
 
 foreach
