@@ -20,6 +20,29 @@
 
 `npx shadcn-ui@latest add button`
 
+### Buttons
+
+...
+
+### Marketing Skeleton
+
+...
+
+### Authentication (Clerk)
+
+```
+npm i @clerk/nextjs@4.29.9
+clerk.com - login - create app: "antonio-duolingo-clone" - create application
+copy API KEYS to .env
+.gitignore .env
+```
+
+.env
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+```
+
 ### Deployment
 
 foreach
