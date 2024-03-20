@@ -47,6 +47,10 @@ CLERK_SECRET_KEY=
 
 ...
 
+### Main layout
+
+`npx shadcn-ui@latest add sheet`
+
 ### Deployment
 
 foreach
