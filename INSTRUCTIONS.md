@@ -173,6 +173,46 @@ localhost: select course, go into a comp. lesson, regain heart
 
 localhost: visit /shop, buy heart
 
+### Stripe
+
+Stripe API KEY & Webhook
+```
+npm i stripe@14.20.0
+stripe.com - login - create store "antonio-duolingo"
+click developers tab
+api keys - copy secret key to .env
+.
+webhooks - "test in local environment"
+download & open stripe cli 
+run stripe login - visit link - allow access
+run stripe listen --forward-to localhost:3000/api/webhooks/stripe
+copy webhook signing secret to .env
+.
+stripe.com - search "billing portal" - customer portal
+click "activate test link"
+validate Billing - "Manage Billing" show "Stripe Plan"
+.
+npm run db:push
+localhost: /shop - upgrade - pay with "42" - access settings to cancel
+```
+
+.env
+```
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+STRIPE_API_KEY=
+STRIPE_WEBHOOK_SECRET=
+```
+
+Webhook production
+```
+stripe.com - login - developers tab - "add endpoint"
+copy vercel endpoint to stripe "endpoint url" + "api/webhook/
+select events - checkout.session.completed & invoice.payment.succeeded
+click "add events" - "add endpoint"
+click "reveal signing secret" - copy to vercel env vars
+copy endpoint url to vercel env var NEXT_PUBLIC_APP_URL + remove "/" at end
+```
+
 ### Deployment
 
 foreach
