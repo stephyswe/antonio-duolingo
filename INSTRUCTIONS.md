@@ -153,6 +153,10 @@ npm i react-use@17.5.0
 localhost: play audio on click quiz card
 ```
 
+### Challenge actions
+
+localhost: choose quiz card & validate answer & hearts counter
+
 ### Deployment
 
 foreach
