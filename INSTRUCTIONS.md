@@ -112,6 +112,13 @@ npm run db:push -
 npm run db:studio - more tables
 ```
 
+### Units
+
+```
+npm run db:seed
+localhost: /learn show JSON of lessons 
+```
+
 ### Deployment
 
 foreach
