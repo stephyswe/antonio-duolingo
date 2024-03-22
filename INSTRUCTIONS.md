@@ -206,7 +206,7 @@ STRIPE_WEBHOOK_SECRET=
 Webhook production
 ```
 stripe.com - login - developers tab - "add endpoint"
-copy vercel endpoint to stripe "endpoint url" + "api/webhook/
+copy vercel endpoint to stripe "endpoint url" + "/api/webhooks/stripe
 select events - checkout.session.completed & invoice.payment.succeeded
 click "add events" - "add endpoint"
 click "reveal signing secret" - copy to vercel env vars
@@ -227,7 +227,17 @@ localhost: /quest, /leaderboard
 npm i ra-data-simple-rest@4.16.12 react-admin@4.16.12
 npm run db:push
 npm run db:studio - add "user_progress/user_id" - to lib/admin.ts
+- reset script
 localhost: /admin, crud functions
+```
+
+### Prod script
+
+```
+npm run db:push
+npm run db:studio - add "user_progress/user_id" - to lib/admin.ts
+npm run db:prod
+localhost: lesson with units
 ```
 
 ### Deployment
