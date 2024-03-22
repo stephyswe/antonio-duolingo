@@ -134,6 +134,14 @@ npx shadcn-ui@latest add progress
 localhost: click lesson inside a course
 ```
 
+### Exit modal
+
+```
+npx shadcn-ui@latest add dialog
+npm i  zustand@4.5.2
+localhost: click exit icon in lesson
+```
+
 ### Deployment
 
 foreach
