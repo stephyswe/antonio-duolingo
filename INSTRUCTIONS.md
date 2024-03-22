@@ -70,7 +70,8 @@ npm i -D drizzle-kit@0.20.14 pg@8.11.3
 npm run db:push
 validate table at neon dashboard
 npm run db:studio - courses - add record - change title to "EMPTY_STRING"
-- record: "1, Spanish, /es.svg" - save changes
+- record: 1 Spanish /es.svg
+- save changes
 ```
 
 .env
@@ -81,7 +82,9 @@ DATABASE_URL=
 ### Courses page
 
 ```
-npm run db:studio
+npm run db:studio - courses - add record - change title to "EMPTY_STRING"
+- record(s): 2 French /fr.svg - 3 Croatian /hr.svg - 4 Italian /it.svg
+- save changes
 ```
 
 ### Deployment
