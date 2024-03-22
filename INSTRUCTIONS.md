@@ -221,6 +221,15 @@ npm run db:push
 localhost: /quest, /leaderboard
 ```
 
+### Admin
+
+```
+npm i ra-data-simple-rest@4.16.12 react-admin@4.16.12
+npm run db:push
+npm run db:studio - add "user_progress/user_id" - to lib/admin.ts
+localhost: /admin, crud functions
+```
+
 ### Deployment
 
 foreach
