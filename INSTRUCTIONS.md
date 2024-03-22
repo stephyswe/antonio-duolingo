@@ -85,6 +85,16 @@ DATABASE_URL=
 npm run db:studio - courses - add record - change title to "EMPTY_STRING"
 - record(s): 2 French /fr.svg - 3 Croatian /hr.svg - 4 Italian /it.svg
 - save changes
+localhost: /courses
+```
+
+### User progress
+
+```
+npx shadcn-ui@latest add sonner 
+npm run db:push
+npm run db:studio - user_progress table
+localhost: select a course in /courses, updates db
 ```
 
 ### Deployment
