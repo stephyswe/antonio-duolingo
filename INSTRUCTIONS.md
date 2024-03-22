@@ -104,6 +104,14 @@ npm i -D tsx@4.7.1
 npm run db:seed - removes user_progress data
 ```
 
+### Schema
+
+```
+npm i -D tsx@4.7.1
+npm run db:push - 
+npm run db:studio - more tables
+```
+
 ### Deployment
 
 foreach
