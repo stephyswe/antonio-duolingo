@@ -157,6 +157,14 @@ localhost: play audio on click quiz card
 
 localhost: choose quiz card & validate answer & hearts counter
 
+### Challenge finish screen (freesound.org for audio)
+
+```
+npm i react-confetti@6.1.0
+npm run db:seed
+localhost: select course, go into lesson, select card until end, confetti at finish screen
+```
+
 ### Deployment
 
 foreach
