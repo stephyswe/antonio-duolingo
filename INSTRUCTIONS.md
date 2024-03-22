@@ -165,6 +165,10 @@ npm run db:seed
 localhost: select course, go into lesson, select card until end, confetti at finish screen
 ```
 
+### Challenge practice
+
+localhost: select course, go into a comp. lesson, regain heart
+
 ### Deployment
 
 foreach
