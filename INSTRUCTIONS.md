@@ -138,13 +138,20 @@ localhost: click lesson inside a course
 
 ```
 npx shadcn-ui@latest add dialog
-npm i  zustand@4.5.2
+npm i zustand@4.5.2
 localhost: click exit icon in lesson
 ```
 
 ### Challenge cards
 
 localhost: quiz cards appear in lesson
+
+### Challenge footer
+
+```
+npm i react-use@17.5.0
+localhost: play audio on click quiz card
+```
 
 ### Deployment
 
