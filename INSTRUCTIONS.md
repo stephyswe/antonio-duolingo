@@ -119,12 +119,19 @@ npm run db:seed
 localhost: /learn show JSON of lessons 
 ```
 
-### Lesson Button
+### Lesson button
 
 ```
 npm i react-circular-progressbar@2.1.0
 npm run db:seed
 localhost: /learn show button and info
+```
+
+### Lesson header
+
+``` 
+npx shadcn-ui@latest add progress
+localhost: click lesson inside a course
 ```
 
 ### Deployment
