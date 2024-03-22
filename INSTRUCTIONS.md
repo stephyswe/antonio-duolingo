@@ -66,14 +66,22 @@ dn: https://orm.drizzle.team/docs/get-started-postgresql
 ```
 neon.tech: login - create instance - copy env to .env
 npm i @neondatabase/serverless@0.9.0 drizzle-orm@0.30.1 dotenv@16.4.5
-npm i -D drizzle-kit@0.20.14
+npm i -D drizzle-kit@0.20.14 pg@8.11.3
 npm run db:push
 validate table at neon dashboard
+npm run db:studio - courses - add record - change title to "EMPTY_STRING"
+- record: "1, Spanish, /es.svg" - save changes
 ```
 
 .env
 ```
 DATABASE_URL=
+```
+
+### Courses page
+
+```
+npm run db:studio
 ```
 
 ### Deployment
