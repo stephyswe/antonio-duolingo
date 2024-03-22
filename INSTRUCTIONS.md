@@ -119,6 +119,14 @@ npm run db:seed
 localhost: /learn show JSON of lessons 
 ```
 
+### Lesson Button
+
+```
+npm i react-circular-progressbar@2.1.0
+npm run db:seed
+localhost: /learn show button and info
+```
+
 ### Deployment
 
 foreach
