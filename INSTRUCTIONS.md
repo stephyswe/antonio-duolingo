@@ -169,6 +169,10 @@ localhost: select course, go into lesson, select card until end, confetti at fin
 
 localhost: select course, go into a comp. lesson, regain heart
 
+### Shop
+
+localhost: visit /shop, buy heart
+
 ### Deployment
 
 foreach
