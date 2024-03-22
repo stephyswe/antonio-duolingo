@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-import { getLesson, getUserProgress } from "@/db/queries";
+import { getLesson, getUserProgress, getUserSubscription } from "@/db/queries";
 
 import { Quiz } from "../quiz";
 
@@ -10,33 +10,40 @@ type Props = {
   };
 };
 
-const LessonIdPage = async ({ params }: Props) => {
+const LessonIdPage = async ({
+  params,
+}: Props) => {
   const lessonData = getLesson(params.lessonId);
   const userProgressData = getUserProgress();
+  const userSubscriptionData = getUserSubscription();
 
-  const [lesson, userProgress] = await Promise.all([
+  const [
+    lesson,
+    userProgress,
+    userSubscription,
+  ] = await Promise.all([
     lessonData,
     userProgressData,
+    userSubscriptionData,
   ]);
 
   if (!lesson || !userProgress) {
     redirect("/learn");
   }
 
-  const initialPercentage =
-    (lesson.challenges.filter((challenge) => challenge.completed).length /
-      lesson.challenges.length) *
-    100;
+  const initialPercentage = lesson.challenges
+    .filter((challenge) => challenge.completed)
+    .length / lesson.challenges.length * 100;
 
-  return (
+  return ( 
     <Quiz
       initialLessonId={lesson.id}
       initialLessonChallenges={lesson.challenges}
       initialHearts={userProgress.hearts}
       initialPercentage={initialPercentage}
-      userSubscription={null} // TODO: Add user subscription
+      userSubscription={userSubscription}
     />
   );
 };
-
+ 
 export default LessonIdPage;

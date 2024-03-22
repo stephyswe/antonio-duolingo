@@ -213,6 +213,14 @@ click "reveal signing secret" - copy to vercel env vars
 copy endpoint url to vercel env var NEXT_PUBLIC_APP_URL + remove "/" at end
 ```
 
+### Details
+
+```
+npx shadcn-ui@latest add avatar separator
+npm run db:push
+localhost: /quest, /leaderboard
+```
+
 ### Deployment
 
 foreach
