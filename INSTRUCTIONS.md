@@ -97,6 +97,13 @@ npm run db:studio - user_progress table
 localhost: select a course in /courses, updates db
 ```
 
+### Seed script
+
+```
+npm i -D tsx@4.7.1
+npm run db:seed - removes user_progress data
+```
+
 ### Deployment
 
 foreach
