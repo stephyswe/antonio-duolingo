@@ -142,6 +142,10 @@ npm i  zustand@4.5.2
 localhost: click exit icon in lesson
 ```
 
+### Challenge cards
+
+localhost: quiz cards appear in lesson
+
 ### Deployment
 
 foreach
